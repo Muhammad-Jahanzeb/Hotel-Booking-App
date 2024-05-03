@@ -1,0 +1,42 @@
+.navbar{
+    width: 100%;
+    background-color: rgb(10, 120, 153);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.navContainer{
+    display: flex;
+    width: 100%;
+    max-width: 1024px;
+    font-weight:lighter;
+    font-size: 2em;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.buttonContainer{
+    display: flex;
+    width: 170px;
+    justify-content: space-between;
+    height: 40px
+}
+
+.navButton{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    border-radius: 8px;
+    border: none;
+    padding-right: 10%;
+    padding-left: 10%;
+    cursor: pointer;
+    transition: 0.3s ease;
+    color: rgb(10, 120, 153);
+}
+
+.navButton:hover {
+    transform: scale(1.1)
+}
