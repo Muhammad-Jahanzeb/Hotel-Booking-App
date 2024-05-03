@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBed, faCar, faPlane, faTaxi } from '@fortawesome/free-solid-svg-icons'
+import { faBed, faCalendar, faCar, faPerson, faPlane, faTaxi, faUser } from '@fortawesome/free-solid-svg-icons'
 
 import './Header.css'
 
@@ -39,6 +39,24 @@ const Header = () => {
         <button className="headerButton">
             Sign in/ Register
         </button>
+
+        <div className="searchContainer">
+            <div className="searchBar">
+                <FontAwesomeIcon icon={faBed}/>
+                <input type="text" placeholder="Where are you going" />
+            </div>
+            <div className="calender">
+            <FontAwesomeIcon icon={faCalendar}/>
+            <span>Check in - Check out</span>
+            </div>
+            <div className="people">
+                <FontAwesomeIcon icon={faUser}/>
+                <span>1 adult - 0 children - 1 room</span>
+            </div>
+            <div className="buttonContainer">
+                <button className='searchButton'>Search</button>
+            </div>
+        </div>
         </div>
 
     </div>
