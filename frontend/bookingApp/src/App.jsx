@@ -1,9 +1,8 @@
-import { useState } from 'react'
+
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Home from './Pages/Home/Home'
 import Lists from './Pages/List/Lists'
-
-import './App.css'
+import Hotel from './Pages/Hotel/Hotel'
 
 
 function App() {
@@ -13,6 +12,7 @@ function App() {
        <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/list' element={<Lists/>}/>
+        <Route path ='/hotel/:id' element={<Hotel/>}></Route>
       </Routes>
     </BrowserRouter>
     </>
