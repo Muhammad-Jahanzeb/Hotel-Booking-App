@@ -10,7 +10,15 @@
     width: 100%;
     max-width: 1024px;
     align-items: center;
-    height: 100%;
+    color: white;
+}
+
+.headerContainerList{
+    justify-content: center;
+    width: 100%;
+    max-width: 1024px;
+    align-items: center;
+    height: 300px;
     color: white;
 }
 
