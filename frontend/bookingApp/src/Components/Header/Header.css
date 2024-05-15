@@ -90,6 +90,10 @@ input{
     margin-left: 7%;
 }
 
+input:focus{
+    border: none;
+}
+
 .calender{
     font-weight: lighter;
     border: solid 3px rgb(225, 190, 12);
