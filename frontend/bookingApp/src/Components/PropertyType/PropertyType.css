@@ -1,0 +1,55 @@
+.typeContainer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.typeCardContainer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 31px;
+    grid-row-gap: 0px;
+    width: 1024px;
+}
+
+.typeCard{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border:none;
+    border-radius: 10px;
+    box-shadow: -1px 4px 20px 0.5px rgba(0,0,0,0.6);
+}
+
+.typeText{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+    width: 100%;
+    align-items: start;
+    padding-left: 5%;
+}
+
+.headingContainer{
+    width: 1024px;
+    margin-top: 2%;
+}
+
+.typeCard img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover; 
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.typeText p{
+    margin-top: 0;
+    color: rgb(157, 157, 157);
+}
+
+.typeText span{
+    font-weight: 800;
+    margin: 0;
+}
