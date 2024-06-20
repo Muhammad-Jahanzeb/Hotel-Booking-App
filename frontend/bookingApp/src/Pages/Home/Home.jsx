@@ -4,6 +4,7 @@ import Header from '../../Components/Header/Header'
 import List from '../../Components/List/List'
 import PropertyType from '../../Components/PropertyType/PropertyType'
 import GuestLove from '../../Components/GuestLove/GuestLove'
+import EmailList from '../../Components/EmailList/EmailList'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <List/>
       <PropertyType/>
       <GuestLove/>
+      <EmailList/>
     </>
   )
 }
