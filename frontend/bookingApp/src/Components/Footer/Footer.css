@@ -1,0 +1,16 @@
+.footerContainer{
+    display: flex;
+    width:100%;
+    justify-content: center;
+}
+
+.footerList{
+    display: flex;
+    justify-content: space-between;
+    width:1024px;
+    margin-top: 2%;
+}
+
+.footerList li{
+    list-style: none;
+}
