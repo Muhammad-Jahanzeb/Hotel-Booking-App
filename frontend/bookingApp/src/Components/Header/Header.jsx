@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBed, faCalendar, faCar, faPerson, faPlane, faTaxi, faUser } from '@fortawesome/free-solid-svg-icons'
 import 'react-date-range/dist/styles.css'; // main style file
 import 'react-date-range/dist/theme/default.css'; // theme css file
+import { useNavigate } from 'react-router-dom';
 
 import './Header.css'
 
@@ -12,6 +13,7 @@ const Header = (props) => {
     const {type} = props
 
     const[clicked, setClicked] = useState(false)
+    const [destination, setDestination] = useState("")
     const [date, setDate] = useState([
         {
           startDate: new Date(),
@@ -48,6 +50,17 @@ const Header = (props) => {
         }
     }
 
+    const navigate = useNavigate()
+
+    const handleSearch=()=>{
+        try{
+            navigate("/list", {state:{destination, date, people}})
+        }
+        catch(error){
+            console.log("Error in handling search.\nError: ", error)
+        }
+    }
+
   return (
     <div className='header'>
         <div className={type!='list'?"headerContainer":"headerContainerList"}>
@@ -79,14 +92,15 @@ const Header = (props) => {
         <p className="headerDesc">
             Get rewarded for your travels-unlock instant savings of 10% or mote with a free Booking account
         </p>
-        <button className="headerButton">
-            Sign in/ Register
-        </button>
         {type !='list'?
+           <>
+                  <button className="headerButton">
+                          Sign in/ Register
+                  </button>
                   <div className="searchContainer">
                   <div className="searchBar">
                       <FontAwesomeIcon icon={faBed}/>
-                      <input type="text" placeholder="Where are you going" />
+                      <input type="text" placeholder="Where are you going" onChange={e=>setDestination(e.target.value)}/>
                   </div>
                   <div className="calender">
                   <FontAwesomeIcon icon={faCalendar}/>
@@ -147,9 +161,12 @@ const Header = (props) => {
                   </div>:null}
                   </div>
                   <div className="buttonContainer">
-                      <button className='searchButton'>Search</button>
+                      <button className='searchButton' onClick={()=>{
+                        handleSearch()
+                      }}>Search</button>
                   </div>
               </div>
+            </>
         :null}
         </div>
 

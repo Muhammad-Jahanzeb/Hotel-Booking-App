@@ -1,0 +1,51 @@
+.listPage{
+    display: flex;
+    margin-top: 5%;
+    width: 100%;
+    justify-content: center;
+}
+
+.listPageContainer{
+    display: flex;
+    width: 1024px;
+    gap:20px;
+}
+
+.listSearch{
+    flex:1.5;
+    background-color: rgb(255, 218, 72);
+    padding: 1%;
+    border-radius: 10px;
+}
+
+.listResult{
+    flex:3;
+    background-color: red;
+}
+
+.labelContainer{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8%;
+}
+
+.labelContainer input{
+    width: 60%;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 2%;
+    margin: 0;
+}
+
+.labelContainer label{
+    font-size: 400;
+    color: rgb(84, 84, 84);
+}
+
+.labelContainer span{
+    background-color: white;
+    padding: 2%;
+    width:70%;
+    border-radius: 8px;
+    cursor: pointer;
+}
