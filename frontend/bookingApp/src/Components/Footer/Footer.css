@@ -9,8 +9,13 @@
     justify-content: space-between;
     width:1024px;
     margin-top: 2%;
+    font-size: 80%;
+    color:rgb(3, 134, 174);
+    font-weight: 500;
 }
 
 .footerList li{
     list-style: none;
+    padding-bottom: 10%;
+    cursor: pointer;
 }
