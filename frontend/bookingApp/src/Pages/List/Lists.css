@@ -27,6 +27,7 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 8%;
+    margin-top: 2%;
 }
 
 .labelContainer input{
@@ -39,7 +40,7 @@
 
 .labelContainer label{
     font-size: 400;
-    color: rgb(84, 84, 84);
+    color: black;
 }
 
 .labelContainer span{
@@ -48,4 +49,11 @@
     width:70%;
     border-radius: 8px;
     cursor: pointer;
+    margin:0;
+}
+
+.numberContainer{
+    display: flex;
+    width:100%;
+    justify-content: space-between;
 }
