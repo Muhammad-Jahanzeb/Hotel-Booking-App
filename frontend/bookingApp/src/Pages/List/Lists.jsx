@@ -35,7 +35,7 @@ const Lists = () => {
               </label>
               <span onClick={()=>setClicked(!clicked)}>{format(date[0].startDate, "MM/dd/yyyy")} - {format(date[0].endDate, "MM/dd/yyyy")}</span>
               {clicked?
-                <div className="datePicker">
+                <div style={{marginTop:"2%"}}>
                   <DateRange
                     editableDateInputs={true}
                     onChange={item => setDate([item.selection])}
@@ -44,6 +44,37 @@ const Lists = () => {
                     minDate = {new Date()}
                   />
                 </div>:null}
+            </div>
+            <div className="labelContainer">
+              <label>Options</label>
+              <div className="numberContainer">
+                <label>Min price per night</label>
+                <input type="text"/>
+            </div>
+            <div className="labelContainer">
+              <div className="numberContainer">
+                <label>Max price per night</label>
+                <input type="text"/>
+              </div>
+            </div>
+            <div className="labelContainer">
+              <div className="numberContainer">
+                <label>Adults</label>
+                <input type="number" min={1} placeholder={people.adults}/>
+              </div>
+            </div>
+            <div className="labelContainer">
+              <div className="numberContainer">
+                <label>Children</label>
+                <input type="number" min={0}  placeholder={people.children}/>
+              </div>
+            </div>
+            <div className="labelContainer">
+              <div className="numberContainer">
+                <label>Rooms</label>
+                <input type="number" min={1}  placeholder={people.rooms}/>
+              </div>
+            </div>
             </div>
           </div>
           <div className="listResult">
