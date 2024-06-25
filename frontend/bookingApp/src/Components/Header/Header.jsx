@@ -84,71 +84,71 @@ const Header = (props) => {
         </button>
         {type !='list'?
                   <div className="searchContainer">
-                  <div className="searchBar">
-                      <FontAwesomeIcon icon={faBed}/>
-                      <input type="text" placeholder="Where are you going" />
-                  </div>
-                  <div className="calender">
-                  <FontAwesomeIcon icon={faCalendar}/>
-                 
-                  <span onClick={toggleClick}>{format(date[0].startDate, "MM/dd/yyyy")} - {format(date[0].endDate, "MM/dd/yyyy")}</span>
-                  {
-                      clicked?
-                      <div className='datePicker'>
-                          <DateRange
-                          editableDateInputs={true}
-                          onChange={item => setDate([item.selection])}
-                          moveRangeOnFirstSelection={false}
-                          ranges={date}
-                          />
-                       </div>:null
-                  }
-                  </div>
-                  <div className="people">
-                      <FontAwesomeIcon icon={faUser}/>
-                      <span onClick={()=>setPeopleClick(!peopleClick)}>{people.adults} adult - {people.children} children - {people.rooms} room</span>
-                      {peopleClick?
-                      <div className="counterContainer">
-                      <div className='counter'>
-                          <span>Adults</span>
-                          <div className="counterBtn">
-                              <button 
-                              onClick={()=>handlePeople('adults','i')}>+</button>
-                              <span>{people.adults}</span>
-                              <button
-                              disabled  = {people.adults<=1}
-                              onClick={()=>handlePeople('adults','d')}>-</button>
-                          </div>
-      
-                      </div>
-                      <div className='counter'>
-                          <span>Children</span>
-                          <div className="counterBtn">
-                              <button
-                              onClick={()=>handlePeople('children','i')}>+</button>
-                              <span>{people.children}</span>
-                              <button
-                              disabled  = {people.children<=0}
-                              onClick={()=>handlePeople('children','d')}>-</button>
-                          </div>
-      
-                      </div>
-                      <div className='counter'>
-                          <span>Rooms</span>
-                          <div className="counterBtn">
-                              <button
-                              onClick={()=>handlePeople('rooms','i')}>+</button>
-                              <span>{people.rooms}</span>
-                              <button
-                               disabled  = {people.rooms<=1}
-                               onClick={()=>handlePeople('rooms','d')}>-</button>
-                          </div>
-                      </div>
-                  </div>:null}
-                  </div>
-                  <div className="buttonContainer">
-                      <button className='searchButton'>Search</button>
-                  </div>
+                    <div className="searchBar">
+                        <FontAwesomeIcon icon={faBed}/>
+                        <input type="text" placeholder="Where are you going" />
+                    </div>
+                    <div className="calender">
+                    <FontAwesomeIcon icon={faCalendar}/>
+                    
+                    <span onClick={toggleClick}>{format(date[0].startDate, "MM/dd/yyyy")} - {format(date[0].endDate, "MM/dd/yyyy")}</span>
+                    {
+                        clicked?
+                        <div className='datePicker'>
+                            <DateRange
+                            editableDateInputs={true}
+                            onChange={item => setDate([item.selection])}
+                            moveRangeOnFirstSelection={false}
+                            ranges={date}
+                            />
+                        </div>:null
+                    }
+                    </div>
+                    <div className="people">
+                        <FontAwesomeIcon icon={faUser}/>
+                        <span onClick={()=>setPeopleClick(!peopleClick)}>{people.adults} adult - {people.children} children - {people.rooms} room</span>
+                        {peopleClick?
+                        <div className="counterContainer">
+                        <div className='counter'>
+                            <span>Adults</span>
+                            <div className="counterBtn">
+                                <button 
+                                onClick={()=>handlePeople('adults','i')}>+</button>
+                                <span>{people.adults}</span>
+                                <button
+                                disabled  = {people.adults<=1}
+                                onClick={()=>handlePeople('adults','d')}>-</button>
+                            </div>
+        
+                        </div>
+                        <div className='counter'>
+                            <span>Children</span>
+                            <div className="counterBtn">
+                                <button
+                                onClick={()=>handlePeople('children','i')}>+</button>
+                                <span>{people.children}</span>
+                                <button
+                                disabled  = {people.children<=0}
+                                onClick={()=>handlePeople('children','d')}>-</button>
+                            </div>
+        
+                        </div>
+                        <div className='counter'>
+                            <span>Rooms</span>
+                            <div className="counterBtn">
+                                <button
+                                onClick={()=>handlePeople('rooms','i')}>+</button>
+                                <span>{people.rooms}</span>
+                                <button
+                                disabled  = {people.rooms<=1}
+                                onClick={()=>handlePeople('rooms','d')}>-</button>
+                            </div>
+                        </div>
+                    </div>:null}
+                    </div>
+                    <div className="buttonContainer">
+                        <button className='searchButton'>Search</button>
+                    </div>
               </div>
         :null}
         </div>
