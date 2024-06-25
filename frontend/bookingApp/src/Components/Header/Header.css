@@ -20,6 +20,7 @@
     align-items: center;
     height: 300px;
     color: white;
+    margin-bottom:-5%;
 }
 
 .headerList{
@@ -90,6 +91,10 @@ input{
     margin-left: 7%;
 }
 
+input:focus{
+    border: none;
+}
+
 .calender{
     font-weight: lighter;
     border: solid 3px rgb(225, 190, 12);
@@ -153,8 +158,7 @@ input{
     width:15%;
     border-radius: 8px;
     padding: 0.5%;
-    box-shadow: -4px 15px 34px 7px rgba(0,0,0,0.29);
-    -moz-box-shadow: -4px 15px 34px 7px rgba(0,0,0,0.29);
+    background-color: white;
     box-shadow: -4px 15px 34px 7px rgba(0,0,0,0.29);
 }
 
