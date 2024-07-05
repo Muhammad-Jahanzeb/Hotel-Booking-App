@@ -1,0 +1,119 @@
+.searchItem{
+    display: flex;
+    padding: 1%;
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 5px;
+    margin-bottom: 2%;
+}
+
+.itemImage{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.itemDescription{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 2;
+    gap:5px
+}
+
+.itemDescription h3{
+    margin: 0;
+}
+
+.itemTitle{
+    color: rgb(5, 71, 91);
+}
+
+
+.itemTaxiOp{
+    background-color: green;
+    color: white;
+    width: max-content;
+    padding: 2%;
+    border-radius: 5px;
+}
+
+.itemDetails{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.itemSubtitle{
+    font-weight: bold;
+}
+
+.cancelOp{
+    font-weight: bold;
+    color: green;
+}
+
+.cancelOpSubtitle{
+    color:green
+}
+
+.fontSize{
+    font-size: 70%;
+}
+
+.itemRating{
+    display: flex;
+    justify-content: space-between;
+}
+
+.itemRate{
+    border: none;
+    color: white;
+    background-color: rgb(5, 71, 91);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.itemRate:active{
+    position: relative;
+    top:1px
+}
+
+.itemRate:hover{
+    background-color:rgb(7, 135, 173);
+}
+
+.itemInfo{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    gap:0px
+}
+
+.itemPrice{
+    font-size: 140%;
+    font-weight: bold;
+    color: rgb(5, 71, 91);
+}
+
+.itemTaxes{
+    color: rgb(136, 136, 136);
+}
+
+.itemAvl{
+    background-color: rgb(5, 71, 91);
+    color: white;
+    border:none;
+    border-radius: 5px;
+    padding: 4%;
+}
+
+.itemAvl:hover{
+    background-color:rgb(7, 135, 173);
+}
+
+.itemAvl:active{
+    position: relative;
+    top:1px
+}

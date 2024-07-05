@@ -2,30 +2,6 @@ import './List.css'
 
 const List = () => {
   return (
-<<<<<<< HEAD
-    <div className="container">
-        <div className="listContainer">
-            <div className="listItem">
-                <img src='https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/ed/95/07/limak-eurasia-luxury.jpg?w=700&h=-1&s=1'/>
-                <div className="textContainer">
-                    <h1>Title</h1>
-                    <h2>Something</h2>
-                </div>
-            </div>
-            <div className="listItem">
-                <img src='https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/ed/95/07/limak-eurasia-luxury.jpg?w=700&h=-1&s=1'/>
-                <div className="textContainer">
-                    <h1>Title</h1>
-                    <h2>Something</h2>
-                </div>
-            </div>
-            <div className="listItem">
-                <img src='https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/ed/95/07/limak-eurasia-luxury.jpg?w=700&h=-1&s=1'/>
-                <div className="textContainer">
-                    <h1>Title</h1>
-                    <h2>Something</h2>
-                </div>
-=======
     <div className="listContainer">
         <div className="cardContainer">
             <div className="listCard">
@@ -50,15 +26,10 @@ const List = () => {
                         <h1>Ttitle</h1>
                         <h2>Description</h2>
                     </div>
->>>>>>> 6352f6046e83b52fac168ff61f5de8b08439f4dc
             </div>
         </div>
     </div>
   )
 }
 
-<<<<<<< HEAD
 export default List
-=======
-export default List
->>>>>>> 6352f6046e83b52fac168ff61f5de8b08439f4dc

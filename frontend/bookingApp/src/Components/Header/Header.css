@@ -147,14 +147,14 @@ input:focus{
 
 .datePicker{
     position: absolute;
-    top:65%;
+    top:70%;
     left:33%;
 }
 
 .counterContainer{
     display: block;
     position:absolute;
-    top:65%;
+    top:70%;
     width:15%;
     border-radius: 8px;
     padding: 0.5%;
