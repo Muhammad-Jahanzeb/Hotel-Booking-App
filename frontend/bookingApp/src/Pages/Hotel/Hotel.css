@@ -1,0 +1,95 @@
+.hoterlContainter{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.hotelWrapper{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    width: 1024px;
+    margin-top: 2%;
+}
+
+.titleLine{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hotelBookBtn{
+    background-color:  rgb(5, 71, 91);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.hotelBookBtn:hover{
+    background-color: rgb(7, 135, 173);;
+}
+
+.hotelBookBtn:active{
+    position: relative;
+    top:1px
+}
+
+
+.hotelImages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.hotelImageContainer{
+    width: 33%;
+}
+
+.hotelImage{
+    width: 100%;
+    object-fit: cover;
+}
+
+.hotelTitle{
+    font-size: 200%;
+    margin: 0;
+}
+
+.hotelAddress{
+    display: flex;
+    font-size: 80%;
+    gap:10px
+}
+
+.hotelDistance{
+    font-weight: 500;
+    color:  rgb(5, 71, 91);
+}
+
+.hotelPrice{
+    font-weight: 500;
+    color: green;
+}
+
+.hotelDetialsContainer{
+    display: flex;
+    margin-top: 2%;
+    justify-content: space-between;
+}
+
+.detailsTitle{
+    font-size: 200%;
+    margin: 0;
+}
+
+.detailsText{
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+}
+
+.detailsPrice{
+    background-color: aqua;
+}
